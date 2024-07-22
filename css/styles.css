@@ -1,0 +1,58 @@
+/*las custom properties se agregan con el simbolo :root, es como crear una variable e iniciar con -- y el nombre q le qeres poner  */
+
+: root {
+    --mainFont: 'Roboto', sans-serif;
+    --secondaryFont:"Lato", sans-serif;
+    --primaryColor: #1073BA;
+    --secondaryColor: #3b3b3b;
+    --white: #FFFFFF;
+    --black:#1f1e1e;
+    --gray: #e1e1e1;
+    --separacion: 5rem;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    box-sizing: border-box;
+}
+*,*::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family:  var( --mainFont );
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*GLOBALES*/
+
+.contenedor {
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    font-weight: 900;
+    font-family: var(--secondaryFont);
+    margin: calc(var(--separacion) / 2) 0;
+}
+h1{
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+    display: block; /*por el espacio que se agregan naturalmente en las imagnes, con block se saca ese espacio*/
+}
+
+/* UTILIADADES*/
+.text-center{
+    text-align: center;
+}
