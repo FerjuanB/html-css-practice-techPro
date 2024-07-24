@@ -153,16 +153,38 @@ text-align: center;
 
 /*Sobre techPRO*/
 .sobre-tech{
-    background-image: linear-gradient(to bottom, transparent 50%, var(--primaryColor) 0%), url(../img/imagen-mujer.webp);
     background-position: right;
     background-repeat: repeat, no-repeat;
     background-size: 100%, 110rem;
 }
+.notavif.notwebp .sobre-tech{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primaryColor) 0%), url(../img/imagen-mujer.jpg);
+}
+.webp .sobre-tech{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--primaryColor) 0%), url(../img/imagen-mujer.webp);
+}
+.avif .sobre-tech{
+ background-image: linear-gradient(to bottom, transparent 50%, var(--primaryColor) 0%), url(../img/imagen-mujer.avif);   
+}
+
 @media (min-width: 768px){ 
     .sobre-tech{
+        background-repeat: repeat,no-repeat;
+    }
+    .notavif.notwebp .sobre-tech{
+        background-image: linear-gradient(to left, transparent 50%, var(--primaryColor) 0%),url(../img/imagen-mujer.jpg);
+    }
+    .notavif.notwebp .sobre-tech{
         background-image: linear-gradient(to left, transparent 50%, var(--primaryColor) 0%),url(../img/imagen-mujer.webp);
     }
+    .avif .sobre-tech{
+        background-image: linear-gradient(to left, transparent 50%, var(--primaryColor) 0%),url(../img/imagen-mujer.avif);
+    }
 }
+@media (min-width: 1600px){ 
+   .sobre-tech{
+    background-size: 100%,210rem;
+}}
 .sobre-tech-grid{
     display: grid;
     grid-template-rows: repeat(2,40rem);
@@ -285,18 +307,36 @@ background-image: url(../img/modelo-x.svg);
 /*NewsLetter*/
 
 .newsletter{
-background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%),url(../img/newsletter.webp);
 background-position: center,-15rem -8rem; ;
 background-size: 100%, 70rem;
 
 background-repeat: no-repeat;
 }
+.notavif.notwebp .newsletter{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%),url(../img/newsletter.jpg);
+}
+.webp .newsletter{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%),url(../img/newsletter.webp);
+}
+.avif .newsletter{
+    background-image: linear-gradient(to bottom, transparent 50%, var(--white) 0%),url(../img/newsletter.avif);
+
+}
 @media (min-width: 768px){ 
     .newsletter{
-        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%),url(../img/newsletter.webp);
+        
         background-position: left, -11rem 0rem;
         background-size: 100%, 60rem ;
         padding: 10rem 0;
+    }
+    .notavif.notwebp .newsletter{
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%),url(../img/newsletter.jpg);
+    }
+    .webp .newsletter{
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%),url(../img/newsletter.webp);
+    }
+    .avif .newsletter{
+        background-image: linear-gradient(to right, transparent 50%, var(--white) 0%),url(../img/newsletter.avif);
     }
 }
 @media (min-width: 992px){ 
